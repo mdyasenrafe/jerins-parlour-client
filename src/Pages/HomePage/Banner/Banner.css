@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+  .banner-img {
+    margin-top: 20px;
+  }
+}
