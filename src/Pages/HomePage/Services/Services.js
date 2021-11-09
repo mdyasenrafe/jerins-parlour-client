@@ -3,26 +3,15 @@ import Service from "../Service/Service";
 import { css } from "@emotion/react";
 import FadeLoader from "react-spinners/FadeLoader";
 import { Link } from "react-router-dom";
+import UseServices from "../../../Hooks/UseServices";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-  let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#f63e7b");
-
+  const { color, services, loading } = UseServices();
   const override = css`
     display: block;
     margin: 20px auto;
   `;
 
-  useEffect(() => {
-    fetch("https://fast-taiga-01124.herokuapp.com/services")
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        setServices(data);
-      });
-    console.log(services);
-  }, []);
   return (
     <section className="container mx-auto py-24">
       <div className="text-center font-bold">
