@@ -2,9 +2,9 @@ import React from "react";
 
 const Service = (props) => {
   const { name, image, description, price } = props.data;
-
+  console.log(props.data);
   return (
-    <div className="shadow-lg rounded-2xl p-5 text-center">
+    <div className="shadow-lg rounded-2xl p-5 text-center mt-5">
       <div className="py-6">
         <img className="mx-auto" src={image} alt="" />
       </div>

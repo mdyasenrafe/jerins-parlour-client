@@ -1,23 +1,34 @@
-const data = [
+const review = [
   {
-    image: "https://i.ibb.co/bKn23bD/Group-1373.png",
-    name: "Anti Age Face Treatment",
+    name: "Nash Patrik ",
+    role: "CEO, Manpol",
+    image: "https://i.ibb.co/ckTqfB6/Ellipse-90.png",
+    star: "3.5",
     description:
-      "We craft stunning and amazing web UI, using a well drrafted UX to fit your product.",
-    price: 199,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat",
   },
   {
-    image: "https://i.ibb.co/8dGvykw/Group-1372.png",
-    name: "Hair Color & Styleing",
+    name: "Miriam Barron",
+    role: "CEO, Pepsi",
+    image: "https://i.ibb.co/k86tXbS/people-1.png",
+    star: "4.5",
     description:
-      "Amazing flyers, social media posts and brand representations that would make your brand stand out.",
-    price: 99,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat",
   },
   {
-    image: "https://i.ibb.co/WV7MzP9/Group-1374.png",
-    name: "Skin Care Treatment",
+    name: "Malone Miriam",
+    role: "CEO, Microsoft",
+    image: "https://i.ibb.co/4dTMmrW/Ellipse-91.png",
+    star: "5",
     description:
-      "With well written codes, we build amazing apps for all platforms, mobile and web apps in general.",
-    price: 299,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat",
+  },
+  {
+    name: "Bria Malone",
+    role: "CEO, Apple",
+    image: "https://i.ibb.co/XFxjGfS/Ellipse-92.png",
+    star: "4.3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat",
   },
 ];

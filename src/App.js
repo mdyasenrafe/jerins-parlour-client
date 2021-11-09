@@ -3,6 +3,8 @@ import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Pages/HomePage/Home/Home";
 import NotMatch from "./Pages/NotMatchPage/NotMatch";
+import Services from "./Pages/HomePage/Services/Services";
+import NavBar from "./Pages/SharedPage/NavBar/NavBar";
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
         </Route>
         <Route exact path="/">
           <Home></Home>
+        </Route>
+        <Route exact path="/services">
+          <NavBar></NavBar>
+          <Services></Services>
         </Route>
         <Route path="*">
           <NotMatch></NotMatch>

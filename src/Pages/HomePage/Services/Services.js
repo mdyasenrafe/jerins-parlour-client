@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Service from "../Service/Service";
 import { css } from "@emotion/react";
 import FadeLoader from "react-spinners/FadeLoader";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -14,17 +15,18 @@ const Services = () => {
   `;
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://fast-taiga-01124.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setLoading(false);
         setServices(data);
       });
+    console.log(services);
   }, []);
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto py-24">
       <div className="text-center font-bold">
-        <h1 className="text-4xl ">
+        <h1 className="text-4xl mb-6">
           <span className="text-ebony">Our Awesome</span>
           <span className="text-violet-red"> Services</span>
         </h1>
@@ -44,6 +46,11 @@ const Services = () => {
         {services.map((data) => (
           <Service key={data._id} data={data}></Service>
         ))}
+      </div>
+      <div className="text-center mt-12">
+        <Link to="/services">
+          <button className="btn text-white">See More</button>
+        </Link>
       </div>
     </section>
   );

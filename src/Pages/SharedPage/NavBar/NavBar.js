@@ -28,7 +28,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className=" my-4 lg:my-0 lg:inline-block  px-3">
-            <Link to="/home">Our Services</Link>
+            <Link to="/services">Our Services</Link>
           </li>
           <li className="my-4 lg:my-0 lg:inline-block  px-3">
             <Link to="/home">Contact Us</Link>
